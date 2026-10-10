@@ -2,7 +2,7 @@
 
 **Ein Options-Pricing-Terminal im Browser — eine einzige HTML-Datei, kein Build, kein Server, keine Abhängigkeiten.**
 
-🔗 **[Live öffnen](https://maximilianburgschweiger.github.io/options-desk/)**
+🔗 **[Live öffnen](https://USERNAME.github.io/options-desk/)**
 
 > **Privates Lernprojekt.** Keine Anlageberatung, keine Handelsempfehlung, keine Gewähr für die
 > Richtigkeit der Ergebnisse — siehe [Haftungsausschluss](#haftungsausschluss).
@@ -17,9 +17,16 @@
 
 ## Der Grundgedanke
 
-Die meisten kostenlosen Optionsrechner geben einen Preis und fünf Greeks aus. Das beantwortet die Frage „was ist diese Option wert" — aber nicht die Frage, die beim Handeln zählt: **Ist dieser Preis gut, und was passiert mit meiner Position, wenn sich nichts bewegt?**
+Die meisten Optionsrechner geben einen Preis und fünf Greeks aus und hören da auf. Woher die Zahl kommt, was sie voraussetzt und ab wo sie nichts mehr aussagt, steht nirgends. Dabei ist genau das die Information, die man beim Handeln braucht — nicht noch eine Nachkommastelle.
 
-Dieses Tool deckt den ganzen Weg ab: bewerten, Risiko verstehen, Vola einordnen, Struktur auswählen, Position dimensionieren, Rollen durchrechnen.
+Dieses Tool ist nach der umgekehrten Regel gebaut: **lieber sagen, was man nicht weiß, als eine Zahl hinstellen, die nach Wissen aussieht.** Vier Stellen, an denen das konkret wird:
+
+- **Greeks stehen auf echten Skalen** — Delta auf −1 bis +1, Gamma und Vega auf ihr Maximum am Geld. Rho und Lambda bekommen **keine** Skala, weil es für sie keine gibt. Lieber eine Lücke als ein erfundener Maßstab.
+- **Der Preis sagt nichts über teuer oder günstig.** Gibt man die implizite Vola aus der Kette ein, kommt per Konstruktion der Marktpreis zurück. Das Tool schreibt das hin, statt es zu verschweigen, und holt die Aussage aus dem Vola-Vergleich.
+- **Keine Ampel.** Der Vola-Aufschlag wird in Euro ausgewiesen, nicht als rotes oder grünes Symbol. Denn ob ein Aufschlag von 20 % viel ist, hängt vom Papier ab — die Einordnung bleibt beim Nutzer.
+- **Farbe bedeutet eine Sache.** Grün und Rot nur bei Geldbeträgen, Greeks neutral. Sonst liest das Auge eine Wertung, wo nur ein Vorzeichen steht.
+
+Darüber hinaus deckt das Tool den ganzen Weg ab: bewerten, Risiko verstehen, Vola einordnen, Struktur auswählen, Position dimensionieren, Rollen durchrechnen.
 
 ---
 
