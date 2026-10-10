@@ -2,7 +2,7 @@
 
 **Ein Options-Pricing-Terminal im Browser — eine einzige HTML-Datei, kein Build, kein Server, keine Abhängigkeiten.**
 
-🔗 **[Live öffnen](https://USERNAME.github.io/options-desk/)**
+🔗 **[Live öffnen](https://maximilianburgschweiger.github.io/options-desk/)**
 
 > **Privates Lernprojekt.** Keine Anlageberatung, keine Handelsempfehlung, keine Gewähr für die
 > Richtigkeit der Ergebnisse — siehe [Haftungsausschluss](#haftungsausschluss).
